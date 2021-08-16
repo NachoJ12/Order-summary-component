@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224, 23%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+  --fontRedHat: 'Red Hat Display', sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: var(--paleBlue);
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-family: var(--fontRedHat);
+}
+
+main {
+  background-color: #FFF;
+  min-width: 290px;
+  max-width: 335px;
+  width: 95vw;
+  border-radius: 20px;
+}
+
+main img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+main div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+main div.container div.principal {
+  text-align: center;
+}
+
+main div.container div.principal h1 {
+  color: var(--darkBlue);
+  font-weight: 900;
+}
+
+main div.container div.principal p {
+  color: var(--desaturatedBlue);
+}
+
+main div.container div.plan {
+  background: var(--veryPaleBlue);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60px 1fr 70px;
+      grid-template-columns: 60px 1fr 70px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+main div.container div.plan img {
+  width: 40px;
+}
+
+main div.container div.plan div {
+  padding-right: 1rem;
+  width: 110px;
+}
+
+main div.container div.plan div h4 {
+  color: var(--darkBlue);
+  padding-bottom: 5px;
+}
+
+main div.container div.plan div p {
+  color: var(--desaturatedBlue);
+}
+
+main div.container div.plan a {
+  color: var(--brightBlue);
+  font-weight: 700;
+  font-size: 14px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main div.container div.plan a:hover {
+  opacity: 60%;
+  text-decoration: none;
+}
+
+main div.container button {
+  font-weight: 900;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main div.container button.pay {
+  background: var(--brightBlue);
+  color: #FFF;
+  -webkit-box-shadow: 0px 18px 5px #f0f0ff;
+          box-shadow: 0px 18px 5px #f0f0ff;
+}
+
+main div.container button.pay:hover {
+  opacity: 60%;
+}
+
+main div.container button.cancel {
+  background: none;
+  color: var(--desaturatedBlue);
+}
+
+main div.container button.cancel:hover {
+  color: var(--darkBlue);
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+}
+
+footer div.attribution {
+  font-size: 14px;
+  text-align: center;
+}
+
+footer div.attribution a {
+  color: #3e52a3;
+  text-decoration: none;
+}
+
+@media (min-width: 376px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+  }
+  main {
+    min-width: 376px;
+    max-width: 400px;
+    margin: 1.5rem;
+  }
+  main div.container {
+    padding: 2rem;
+  }
+  main div div.principal {
+    padding: 0rem 1.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
