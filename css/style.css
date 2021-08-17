@@ -184,7 +184,7 @@ footer div.attribution a {
 }
 
 @media (prefers-color-scheme: dark) {
-  button.pay {
+  main div.container button.pay {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
